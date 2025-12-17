@@ -163,7 +163,7 @@ const Hero = () => {
         <AnimatedSection delay={100}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium text-slate-100 leading-tight mb-8 font-dm-sans">
             Hi, I'm <span className="font-dm-sans font-black text-blue-100">Antonio Lupo</span>,<br />
-            and I love <span className="relative inline-flex flex-col h-[1.1em] overflow-hidden align-bottom">
+            and I love <span className="relative inline-flex flex-col h-[1.1em] overflow-hidden align-middle">
               {/* Text Swipe Animation Container */}
               <span className={`transition-all duration-300 ease-in-out transform ${isAnimating ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
                   <span className="font-dm-sans font-black text-blue-100 whitespace-nowrap px-2">
@@ -182,7 +182,7 @@ const Hero = () => {
         {/* Description Animation */}
         <AnimatedSection delay={300}>
           <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light font-dm-sans">
-            Data Scientist & Analyst specialized in <span className="text-blue-400">Football Analytics</span> & <span className="text-blue-400">Predictive Modeling</span>.<br className="hidden md:block"/>
+            Data Scientist & Analyst specialized in <span className="text-blue-400">Football Analytics</span> & <span className="text-blue-400">Predictive Modeling</span>.<br />
             I see data as the <span className="font-bold text-slate-200">language of the pitch</span>, and data science as the tool to <span className="font-bold text-slate-200">interpret it</span>.
           </p>
         </AnimatedSection>
@@ -427,6 +427,8 @@ const Experience = () => {
 // --- Gallery Modal Component ---
 const GalleryModal = ({ isOpen, onClose }) => {
   const [currentPost, setCurrentPost] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
 
   const galleryItems = [
     {
@@ -476,6 +478,30 @@ const GalleryModal = ({ isOpen, onClose }) => {
     }
   ];
 
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    if (isLeftSwipe) {
+      nextPost();
+    }
+    if (isRightSwipe) {
+      prevPost();
+    }
+  };
+
   const nextPost = () => {
     setCurrentPost((prev) => (prev + 1) % galleryItems.length);
   };
@@ -514,7 +540,12 @@ const GalleryModal = ({ isOpen, onClose }) => {
         </div>
 
         {/* Content */}
-        <div className="p-6 flex flex-col items-center relative">
+        <div 
+          className="p-6 flex flex-col items-center relative"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
             
             {/* Nav Buttons (Desktop: Absolute sides, Mobile: Below or hidden) */}
             <button 
@@ -845,6 +876,11 @@ const App = () => {
 
         /* Default font override */
         body {
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        /* Force DM Sans on everything */
+        * {
             font-family: 'DM Sans', sans-serif;
         }
       `}</style>
