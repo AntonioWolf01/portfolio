@@ -431,6 +431,11 @@ const GalleryModal = ({ isOpen, onClose }) => {
   const [touchEnd, setTouchEnd] = useState(null);
 
   const galleryItems = [
+        {
+      image: "https://i.postimg.cc/wjcjmS2f/1767799081045-e-1769644800-v-beta-t-VSxqel-cl-OED7xj-ZNb24k0Rf-WFpq8ncy-Uj-X4g-NNKJQw.jpg",
+      desc: "Comparing the statistical dominance of Spalletti's Juventus against recent Serie A title winners using xPTS per Game metrics.",
+      link: "https://www.linkedin.com/feed/update/urn:li:share:7414686759709700096/"
+    },
     {
       image: "https://i.postimg.cc/gjNTKhqS/1767045347343-e-1769644800-v-beta-t-tk-GA9Er6TVFPKpi-Nz-G-zd-QYt-Hy-Mje395a-WXpo-RUr-g-A.jpg",
       desc: "Profiling Nico Paz's rare statistical duality as a player combining elite creative output with high-volume defensive work.",
