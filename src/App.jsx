@@ -432,47 +432,57 @@ const GalleryModal = ({ isOpen, onClose }) => {
 
   const galleryItems = [
     {
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQH6-TjQycJYtQ/feedshare-shrink_2048_1536/B4DZsjL.6NI4Aw-/0/1765821903800?e=1767225600&v=beta&t=ROosAg-AwjmFiLFXFsTUVPOEcXFISESEfPvbZboqRpc",
+      image: "https://i.postimg.cc/gjNTKhqS/1767045347343-e-1769644800-v-beta-t-tk-GA9Er6TVFPKpi-Nz-G-zd-QYt-Hy-Mje395a-WXpo-RUr-g-A.jpg",
+      desc: "Profiling Nico Paz's rare statistical duality as a player combining elite creative output with high-volume defensive work.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7412115891674554368/"
+    },
+    {
+      image: "https://i.postimg.cc/yxmV6LK8/1767012958883-e-1769644800-v-beta-t-y-PHjf-Iiypab2p-Tgn5x4c-UHi-R-enl0OWRXQVh64Y6df-U.jpg",
+      desc: "Evaluating Fiorentina's paradoxical collapse and relegation risk by comparing their expected points against historical survival benchmarks.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7411454712211894272/"
+    },
+    {
+      image: "https://i.postimg.cc/fTy2NJfc/1765821903800-e-1769644800-v-beta-t-4Kig-HQPONqf-V2AZF23ys-DHh-IIMmbi-P2d8u-JAd6We-4.jpg",
       desc: "Analyzing Teun Koopmeiners' tactical evolution after shifting to a deeper playmaker role under Luciano Spalletti.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7406669356325306368/"
     },
     {
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQEJwrZMQjWp5A/feedshare-shrink_1280/B4DZsSxr4jJYAs-/0/1765546575104?e=1767225600&v=beta&t=vdULcsTZNaCjS8AFc-f8lSlSnqZxZBB0DL_OInv8IfU",
+      image: "https://i.postimg.cc/2y6wrKhy/1765546575104-e-1769644800-v-beta-t-avz-Fh-OKy-MATJO6N6hgp4BWpg-TXX7oa-Am256sp-Rku-Js.jpg",
       desc: "Visualizing Serie A goalkeeper efficiency and performance relative to post-shot expected goals.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7405271467476865024/"
     },
     {
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQF-y3i_pM3SdQ/feedshare-shrink_1280/B4DZsIpMkPKsAc-/0/1765376576006?e=1767225600&v=beta&t=0i7VkcNBCcypQxBtj8zZcMfpYbeXpLUxr4m3FZF1G58",
+      image: "https://i.postimg.cc/hPXrYNKw/1765376576006-e-1769644800-v-beta-t-KXi-Pc-Wdnk-Kq0-panm-Bkx-Lt-WI16l-I-THj-UEeqb-Odb74Y.jpg",
       desc: "Comparing bookmaker predictions with actual win rates to identify Europe's biggest overachieving and underachieving teams.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7404554249050705920/"
     },
     {
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQH16CfhD7Y3TA/feedshare-shrink_2048_1536/B4DZrfLrMWGsAo-/0/1764680971364?e=1767225600&v=beta&t=lJ3uM_HBIz_mdvfstAneBzCKyyLb3PyiJUHrlOSaltQ",
+      image: "https://i.postimg.cc/ZRYPxMfV/1764680971364-e-1769644800-v-beta-t-71A-Zbzjal-Hw-Gmdu5XJBc5fbf-XY6ke-W6Ask-Xcr-uda-E.jpg",
       desc: "Comparing the statistical profiles and distinct strengths of the top six U20 attackers based on market value.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7401655139381620736/"
     },
     {
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQHG9IbJgF8qJw/feedshare-shrink_2048_1536/B4DZrJySBaKQAw-/0/1764321993524?e=1767225600&v=beta&t=xAhnc4EPaspqD2N6NH4wNypPd2gGbSqhBwqJizvHwnI",
+      image: "https://i.postimg.cc/Gm0k5279/1764321993524-e-1769644800-v-beta-t-Bv-H55i-Uufii-R08Yb-KFzu-E64Krh0ad-X5u-G0-cu4x-LE30.jpg",
       desc: "Investigating the migration of top Italian youth talents to German clubs by contrasting playing time data with development efficacy.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7400137641205174273/"
     },
     {
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQGcmcD-5Wz42w/feedshare-shrink_2048_1536/B4DZq7grvkIgAw-/0/1764082500103?e=1767225600&v=beta&t=ByqPpyuTRugb7NaEfiW0sPobqUyzpFMmD5rI0Cd0rK8",
+      image: "https://i.postimg.cc/85nvBPfB/1764082500103-e-1769644800-v-beta-t-2tu-M6Zn-Uw9qlz40-VRmg-Gbdjeg-Dcf9Wdo-ALk-MDQDj-Tw.jpg",
       desc: "Ranking the most dangerous attackers in Europe's Top 5 leagues by combining shot quality and finishing overperformance metrics.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7399386529577578496/"
     },
     {
-      image: "https://media.licdn.com/dms/image/v2/D4E22AQFQg25x5_OnvA/feedshare-shrink_2048_1536/B4EZqcqi93GUAw-/0/1763564991768?e=1767225600&v=beta&t=64GpQ4z1C5n-G5dS1SybUbOhNnyaqNs7H7tU7Idk6Xg",
+      image: "https://i.postimg.cc/7Zy2NRhN/1763564991768-e-1769644800-v-beta-t-F3E85h0G8tl-Ehcp-Pc-TDu45NRJD4ujm-ODss-TUld-FUZPE.jpg",
       desc: "Evaluating Pio Esposito's statistical profile.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7396944099284774912/"
     },
     {
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQHJEIUBg6ZSsA/feedshare-shrink_2048_1536/B4DZqCdWcjIgAw-/0/1763125324085?e=1767225600&v=beta&t=2lHHq7IMlw2rf28YGvH747Ec8B4TawqMZwoEYAD354E",
+      image: "https://i.postimg.cc/nzMTqLcy/1763125324085-e-1769644800-v-beta-t-Au3WZrm-Uk6oh-Cgl-Am-RVKqm57LBLFIt-df-OZu-DRN-QHY.jpg",
       desc: "Breaking down the feature importance of a predictive model to identify the key factors required for successful algorithmic betting strategies.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7396090982636785664/"
     },
     {
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQGjqV_07SBwoA/feedshare-shrink_2048_1536/B4DZp42UXTGkAw-/0/1762964097565?e=1767225600&v=beta&t=4cuW4mdzG0phCFogWMQ-gRMNlBhrvxJuk0MBJd9Dh8Y",
+      image: "https://i.postimg.cc/g2dDNs2X/1762964097565-e-1769644800-v-beta-t-e-HQRNVm-Bz3Buo0r-W3Om-Nov-V3x-LBo-PATIe-Gc-An-WSen4.jpg",
       desc: "Analyzing the Serie A standings by comparing actual points with Expected Points to identify performance sustainability and anomalies across the league.",
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7394407373567766528/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7394407373567766528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29"
     }
