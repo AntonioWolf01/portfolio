@@ -431,7 +431,27 @@ const GalleryModal = ({ isOpen, onClose }) => {
   const [touchEnd, setTouchEnd] = useState(null);
 
   const galleryItems = [
-        {
+               {
+      image: "https://i.postimg.cc/vBdwgsmk/1771428077076-e-1775088000-v-beta-t-u-RQj-Q2I7emr5b-FOk-Deu-Ko-PIfpl3ZOBl-KIDDS-yc-Gg-E.jpg",
+      desc: "Evaluating the effectiveness of Juventus's highly aggressive kickoff strategy under Luciano Spalletti by analyzing Expected Threat data from the opening minutes of matches.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7429928955341684736/?originTrackingId=GxgfQssgtOn9X5tJbCj%2BdQ%3D%3D"
+    },  
+           {
+      image: "https://i.postimg.cc/xCqT5YQN/1770922508850-e-1775088000-v-beta-t-Ku-Vi3r3iulh-G-6Qnetq-Gd-CLh-J7xlhlmr-QNn-UZZZl-HM.jpg",
+      desc: "Investigating the correlation between European squad market values and expected points to identify which clubs are efficiently maximizing their financial resources.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7428041508974428160/?originTrackingId=KB60qZZR%2FGtq3yt6b0ZzrA%3D%3D"
+    },  
+       {
+      image: "https://i.postimg.cc/MZFfhP3C/1769723863764-e-1775088000-v-beta-t-p5y-AAL71Fq-TZB66Mc-T67Wlrdv-FWU-Aa4c0l6E-fp4TA.jpg",
+      desc: "Identifying Serie A's most effective playmakers by utilizing Expected Threat metrics to measure how their territorial passing increases scoring probability.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7422941781132111872/?originTrackingId=gyWIPA4kLDMkR2cGjJLBeQ%3D%3D"
+    },   
+    {
+      image: "https://i.postimg.cc/NfCDCkRy/1768065252178-e-1775088000-v-beta-t-fp-KC5NZm-XNCi-OB-TPSiwydgzh8Hf-OQhp-CVvmop-BKXq-E.jpg",
+      desc: "Assessing goalkeeper performances across Europe's top five leagues over the past five years using goals prevented metrics to identify the continent's elite shot-stoppers.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7416437593329885186/?originTrackingId=%2BJh7dsAl9MKVjzqBIkICfA%3D%3D"
+    },    
+    {
       image: "https://i.postimg.cc/wjcjmS2f/1767799081045-e-1769644800-v-beta-t-VSxqel-cl-OED7xj-ZNb24k0Rf-WFpq8ncy-Uj-X4g-NNKJQw.jpg",
       desc: "Comparing the statistical dominance of Spalletti's Juventus against recent Serie A title winners using xPTS per Game metrics.",
       link: "https://www.linkedin.com/feed/update/urn:li:share:7414686759709700096/"
