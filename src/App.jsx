@@ -349,8 +349,50 @@ const Experience = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-500 mb-16 font-dm-sans">Experience</h2>
         </AnimatedSection>
 
-        {/* Experience 1: Aesys */}
+        {/* Experience 1: Football Benchmark */}
         <AnimatedSection delay={200}>
+          <div className="bg-slate-800 rounded-xl p-8 border border-slate-700 shadow-xl relative overflow-hidden font-dm-sans mb-8">
+            <div className="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+            
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-white rounded flex items-center justify-center overflow-hidden p-1">
+                   <img src="https://i.postimg.cc/d037Zy53/FB-profil-pic-03.jpg" alt="Football Benchmark" className="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">Data Scientist</h3>
+                  <p className="text-blue-400">Football Benchmark (Budapest)</p>
+                </div>
+              </div>
+              <div className="text-slate-400 text-sm mt-2 md:mt-0 font-dm-sans font-normal">
+                02/2025 - Present
+              </div>
+            </div>
+
+            <ul className="space-y-4">
+              <li className="flex items-start space-x-3 text-slate-400 text-sm leading-relaxed">
+                  <span className="text-blue-500 mt-1">▹</span>
+                  <span>Engineered end-to-end Python scraping pipelines to extract public football data and seamlessly integrate it into Azure databases for streamlined retrieval.</span>
+              </li>
+              <li className="flex items-start space-x-3 text-slate-400 text-sm leading-relaxed">
+                  <span className="text-blue-500 mt-1">▹</span>
+                  <span>Optimized and refactored machine learning workflows, enhancing the data lifecycle from initial preparation through to final predictions.</span>
+              </li>
+              <li className="flex items-start space-x-3 text-slate-400 text-sm leading-relaxed">
+                  <span className="text-blue-500 mt-1">▹</span>
+                  <span>Analyzed financial, economic, and sporting data to drive data-centric content creation and develop PowerPoint presentations for Sky Sport broadcasts.</span>
+              </li>
+              <li className="flex items-start space-x-3 text-slate-400 text-sm leading-relaxed">
+                  <span className="text-blue-500 mt-1">▹</span>
+                  <span>Contributed to the company's newsletter by analyzing socio-economic trends in football and designing insightful data visualizations using Python and Excel.</span>
+              </li>
+            </ul>
+          </div>
+        </AnimatedSection>
+
+        {/* Experience 2: Aesys */}
+
+        <AnimatedSection delay={400}>
           <div className="bg-slate-800 rounded-xl p-8 border border-slate-700 shadow-xl relative overflow-hidden font-dm-sans mb-8">
             <div className="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
             
@@ -387,8 +429,8 @@ const Experience = () => {
           </div>
         </AnimatedSection>
 
-        {/* Experience 2: Banca Mediolanum */}
-        <AnimatedSection delay={400}>
+        {/* Experience 3: Banca Mediolanum */}
+        <AnimatedSection delay={600}>
           <div className="bg-slate-800 rounded-xl p-8 border border-slate-700 shadow-xl relative overflow-hidden font-dm-sans">
             <div className="absolute top-0 left-0 w-2 h-full bg-blue-900"></div>
             
