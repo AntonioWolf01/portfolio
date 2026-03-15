@@ -240,16 +240,19 @@ const About = () => {
             </div>
             
             <p className="text-slate-400 leading-relaxed text-lg font-dm-sans">
-              I’m a <strong>Data Scientist</strong> who loves finding the story behind the numbers—especially when those numbers belong to the sports world.
+              I’m a <strong>Data Scientist</strong> who loves finding the story behind the numbers—especially when they belong to the <strong>football world</strong>.
             </p>
             <p className="text-slate-400 leading-relaxed mt-4 font-dm-sans">
-              I hold a <strong>Master’s degree</strong> where I focused heavily on <span className="text-blue-400">Sports Analytics</span> and <span className="text-blue-400">Predictive Modeling</span>. During my studies, I took a deep dive into the field through a specialized course with <strong>Soccerment</strong>. There, I worked with complex event and tracking data to build a model capable of predicting corner kicks. I carried that momentum into my thesis, where I developed a <strong>Deep Learning model</strong> designed to forecast shot dominance in football matches.
+              At <strong>Football Benchmark</strong>, I build end-to-end solutions that turn raw public data into clear insights. I write Python scripts to collect and integrate data into cloud environments, optimize <span className="text-blue-400">machine learning workflows</span>, and design visualizations for media and broadcast use. Ultimately, my goal is to connect the dots between the sporting, financial, and socio-economic trends happening across the industry.
+            </p>
+            <p className="text-slate-400 leading-relaxed mt-4 font-dm-sans">
+              My focus on <span className="text-blue-400">Sports Analytics</span> really took shape during my <strong>Master’s degree</strong>. I collaborated with <strong>Soccerment</strong> in a Football Analytics lab, using complex event and tracking data to build a regression model that predicted corner kicks. For my thesis, I took things a step further by developing a <strong>deep learning model</strong> to forecast shot dominance in matches, which cemented my love for predictive modeling and statistical analysis.
             </p>
             <p className="text-slate-400 leading-relaxed mt-4 font-dm-sans">
               Off the pitch, I’ve gained solid technical experience as a <strong>Data Analyst at Aesys Srl</strong>, building Power BI dashboards and helping optimize Azure pipelines.
             </p>
-             <p className="text-slate-400 leading-relaxed mt-4 font-dm-sans">
-              My journey started in finance and economics. I earned my BSc at the <span className="text-white">University of Bologna</span> (including an exchange semester at Dickinson College in the US) and spent time at Banca Mediolanum and the Riot Investment Society before fully shifting my sights to data science.
+            <p className="text-slate-400 leading-relaxed mt-4 font-dm-sans">
+              My journey started in business and economics. I earned my BSc at the <span className="text-white">University of Bologna</span> (including an exchange semester at Dickinson College in the US) and spent time at Banca Mediolanum and the Riot Investment Society before fully shifting my sights to data science.
             </p>
 
             <div className="flex space-x-4 mt-8">
