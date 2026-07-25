@@ -48,9 +48,10 @@ export const experiences = [
     logo: 'https://i.postimg.cc/d037Zy53/FB-profil-pic-03.jpg',
     bullets: [
       'Engineered end-to-end Python scraping pipelines to extract public football data and seamlessly integrate it into Azure databases for streamlined retrieval.',
-      'Optimized and refactored machine learning workflows, enhancing the data lifecycle from initial preparation through to final predictions.',
-      'Analyzed financial, economic, and sporting data to drive data-centric content creation and develop PowerPoint presentations for Sky Sport broadcasts.',
-      "Contributed to the company's newsletter by analyzing socio-economic trends in football and designing insightful data visualizations using Python and Excel.",
+      'Optimized and refactored machine learning workflows, enhancing the data lifecycle from initial preparation through to final predictions',
+      'Contributed to a Python pipeline hosted on Streamlit that automates presentation creation end-to-end, retrieving data from the Azure database, staging it in Excel, and auto-generating PowerPoint slides with populated charts',
+      "Collaborated in the refinement and testing of specific endpoints of the company's API",
+      "Supported the company's newsletter by analyzing socio-economic trends in football and designing insightful data visualizations using Python and Excel",
     ],
   },
   {
