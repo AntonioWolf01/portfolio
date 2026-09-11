@@ -2,6 +2,7 @@ import { useCallback, useEffect, useId, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import {
   BarChart3,
+  Bot,
   BrainCircuit,
   Calculator,
   ChevronLeft,
@@ -21,6 +22,7 @@ import AnimatedSection from './AnimatedSection'
 import { galleryItems, projects } from '../data/portfolio'
 
 const projectIconMap = {
+  bot: Bot,
   brain: BrainCircuit,
   calculator: Calculator,
   chart: BarChart3,

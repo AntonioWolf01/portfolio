@@ -94,6 +94,20 @@ export const projects = [
     actions: [{ type: 'gallery', label: 'View Gallery', shortLabel: 'Gallery' }],
   },
   {
+    id: 'betfair-bot',
+    title: 'Betfair Value Betting Bot',
+    desc: 'An automated Python service that reads model probabilities from Excel, fetches live odds through the Betfair Exchange JSON-RPC API, and places back and hedging lay orders end-to-end. Features certificate-based authentication, fuzzy team-name resolution and a dry-run mode.',
+    icon: 'bot',
+    iconColor: 'text-red-400',
+    tags: ['Python', 'Betfair API', 'Automation'],
+    status: 'Done',
+    image: '/images/project-betfair-bot.jpg',
+    actions: [
+      { type: 'external', label: 'View Code', shortLabel: 'Code', href: 'https://github.com/AntonioWolf01/betfair-bot', icon: 'github' },
+      { type: 'external', label: 'View LinkedIn Post', shortLabel: 'LinkedIn', href: 'https://www.linkedin.com/posts/antonio-lupo-64227920b_i-built-a-bot-that-finds-and-places-value-ugcPost-7448784123177062400-aPlK/', icon: 'linkedin' },
+    ],
+  },
+  {
     id: 'shot-dominance-thesis',
     title: 'Master Thesis: Shot Dominance',
     desc: 'Developed a predictive model to forecast shot dominance in football matches. Engineered a robust data pipeline using R for scraping and Python for cleaning and standardizing disparate data sources.',
