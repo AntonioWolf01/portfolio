@@ -251,7 +251,7 @@ export const About = () => (
         <div className="relative rounded-xl bg-slate-800 p-2 ring-1 ring-slate-700/50">
           <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-slate-700">
             <img
-              src="https://i.postimg.cc/L4rMfZrQ/Gemini-Generated-Image-1qmx0s1qmx0s1qmx.png"
+              src="/images/profile.png"
               alt="Profile"
               className="h-full w-full object-cover grayscale transition-all duration-500 hover:grayscale-0"
             />
