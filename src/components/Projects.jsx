@@ -15,6 +15,7 @@ import {
   Image as ImageIcon,
   Linkedin,
   Presentation,
+  Target,
   Twitter,
   X,
 } from 'lucide-react'
@@ -29,6 +30,7 @@ const projectIconMap = {
   game: Gamepad2,
   globe: Globe,
   image: ImageIcon,
+  target: Target,
   twitter: Twitter,
 }
 

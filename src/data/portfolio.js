@@ -94,6 +94,20 @@ export const projects = [
     actions: [{ type: 'gallery', label: 'View Gallery', shortLabel: 'Gallery' }],
   },
   {
+    id: 'shot-predictor',
+    title: 'Big Five Shot Predictor',
+    desc: "An interactive dashboard forecasting the full shot distribution for every team in every match of Europe's top five leagues. A machine learning model trained on ten seasons of shots, xG, possession and pre-match odds feeds a negative binomial distribution to price over/under lines and highlight value bets.",
+    icon: 'target',
+    iconColor: 'text-cyan-400',
+    tags: ['Machine Learning', 'Web App', 'Sports Betting'],
+    status: 'Ongoing',
+    image: '/images/project-shot-predictor.jpg',
+    actions: [
+      { type: 'external', label: 'View App', shortLabel: 'App', href: 'https://antoniowolf01.github.io/bigfive-shot-predictor-webapp/', icon: 'github' },
+      { type: 'external', label: 'View LinkedIn Post', shortLabel: 'LinkedIn', href: 'https://www.linkedin.com/posts/antonio-lupo-64227920b_its-been-a-while-since-my-last-post-on-a-ugcPost-7514652405729361920-IW07/', icon: 'linkedin' },
+    ],
+  },
+  {
     id: 'betfair-bot',
     title: 'Betfair Value Betting Bot',
     desc: 'An automated Python service that reads model probabilities from Excel, fetches live odds through the Betfair Exchange JSON-RPC API, and places back and hedging lay orders end-to-end. Features certificate-based authentication, fuzzy team-name resolution and a dry-run mode.',
@@ -195,6 +209,11 @@ export const projects = [
 
 export const galleryItems = [
   {
+    image: '/images/gallery-16.jpg',
+    desc: 'Analyzing the Serie A standings after the first five matchdays by comparing actual points with Expected Points to identify performance sustainability and anomalies across the league.',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7510371520074911744/',
+  },
+  {
     image: '/images/gallery-01.jpg',
     desc: "Evaluating the effectiveness of Juventus's highly aggressive kickoff strategy under Luciano Spalletti by analyzing Expected Threat data from the opening minutes of matches.",
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7429928955341684736/?originTrackingId=GxgfQssgtOn9X5tJbCj%2BdQ%3D%3D',
@@ -268,10 +287,5 @@ export const galleryItems = [
     image: '/images/gallery-15.jpg',
     desc: 'Breaking down the feature importance of a predictive model to identify the key factors required for successful algorithmic betting strategies.',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7396090982636785664/',
-  },
-  {
-    image: '/images/gallery-16.jpg',
-    desc: 'Analyzing the Serie A standings by comparing actual points with Expected Points to identify performance sustainability and anomalies across the league.',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7394407373567766528/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7394407373567766528%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29',
   },
 ]
